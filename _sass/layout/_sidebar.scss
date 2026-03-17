@@ -196,7 +196,7 @@
 
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: 2.0rem;    /* 这里直接改成 2.5rem，大约是原来的三倍 */
+  font-size: 1.2rem;    /* 这里直接改成 2.5rem，大约是原来的三倍 */
   font-weight: 500;     /* 让名字更粗更醒目 */
   line-height: 1.1;
 }
@@ -211,7 +211,7 @@
 /* 统一侧边栏代称和简介的颜色与字号 */
 .sidebar .author__pronouns {
   margin: 0;
-  font-size: 1.2rem !important; 
+  font-size: 0.8rem !important; 
   color: #444 !important; /* 统一颜色：深灰色 */
 
   @include breakpoint($large) {
@@ -223,7 +223,7 @@
 
 .sidebar .author__bio {
   margin: 0;
-  font-size: 1.2rem !important; 
+  font-size: 0.8rem !important; 
   color: #444 !important; /* 统一颜色：深灰色 */
   line-height: 1.4;
 

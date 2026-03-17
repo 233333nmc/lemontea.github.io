@@ -363,52 +363,28 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
       display: none;
     }
   }
-  /* ==========================================================================
-   GLOBAL CONTENT SCALING (Covers Home, Publications, Interests, etc.)
-   ========================================================================== */
-
-/* 1. 缩小所有页面的正文文字 (增加 .archive 以覆盖列表页面) */
-.page__content p, .archive p,
-.page__content li, .archive li,
-.page__content dl, .archive dl,
-.page__content blockquote, .archive blockquote,
-.page__content small, .archive small {
-  font-size: 0.85rem !important;
-  line-height: 1.6 !important;
+  /* 1. 修改所有标题颜色（包含列表页标题） */
+h1, h2, h3, .page__title, .archive__item-title, .archive__subtitle {
+  color: #00467f !important; /* 图中的深蓝色 */
+  font-weight: 600 !important;
+  font-family: "Lora", serif !important; /* 确保标题也用上衬线体 */
 }
 
-/* 2. 缩小列表条目的标题（比如 Publications 里的论文题目） */
-.archive__item-title {
-  font-size: 1.1rem !important; 
-  margin-top: 0.5em !important;
-  margin-bottom: 0.25em !important;
+/* 2. 调整正文及列表描述（Publications 里的文章摘要等） */
+body, .archive__item-excerpt, .archive__item p {
+  color: #4a4a4a !important; 
+  font-family: "Lora", serif !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0.01em;
 }
 
-/* 3. 缩小列表条目的说明文字（摘要、年份、期刊名等） */
-.archive__item-excerpt {
-  font-size: 0.85rem !important;
-  line-height: 1.5 !important;
-}
-
-/* 4. 统一缩小所有页面的标题 */
-.page__content h1, .archive h1, .page__title, .archive__subtitle {
-  font-size: 1.5rem !important;
-}
-
-.page__content h2, .archive h2 {
-  font-size: 1.25rem !important;
-}
-
-.page__content h3, .archive h3 {
-  font-size: 1.1rem !important;
-}
-
-/* 5. 缩小表格和代码块 */
-.page__content table, .archive table {
-  font-size: 0.8rem !important;
-}
-
-.page__content code, .archive code,
-.page__content pre, .archive pre {
-  font-size: 0.75rem !important;
+/* 3. 专门针对 Publications 列表中的链接 */
+.archive__item a {
+  color: #2a7ae2 !important;
+  text-decoration: none;
+  font-weight: 500;
+  
+  &:hover {
+    text-decoration: underline;
+  }
 }
