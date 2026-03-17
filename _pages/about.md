@@ -18,9 +18,6 @@ Currently, I am exploring efficient VLA inference mechanisms under the mentorshi
 
 # Education
 * B.S. in Artificial Intelligence, Shanghai Jiao Tong University, 2023 - Present 
-  * Zhiyuan Honor Program 
-  * GPA: 89/100 
-  * Awards: Zhiyuan Honor Award (2024, 2025), Third Prize of Academic Scholarship (2024, 2025)
 
 # Research Experience
 
