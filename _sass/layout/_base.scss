@@ -364,40 +364,51 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
     }
   }
   /* ==========================================================================
-   CUSTOM CONTENT SCALING (Reduce size for right-side main content)
+   GLOBAL CONTENT SCALING (Covers Home, Publications, Interests, etc.)
    ========================================================================== */
 
-/* 1. 缩小所有段落、列表、引用和描述列表的文字 */
-.page__content p, 
-.page__content li, 
-.page__content dl, 
-.page__content blockquote,
-.page__content small {
-  font-size: 0.85rem !important; /* 原本大约是 1rem 以上，0.85 约为缩小三号的效果 */
-  line-height: 1.6 !important;   /* 稍微增加行间距，防止字小了看不清 */
+/* 1. 缩小所有页面的正文文字 (增加 .archive 以覆盖列表页面) */
+.page__content p, .archive p,
+.page__content li, .archive li,
+.page__content dl, .archive dl,
+.page__content blockquote, .archive blockquote,
+.page__content small, .archive small {
+  font-size: 0.85rem !important;
+  line-height: 1.6 !important;
 }
 
-/* 2. 缩小正文中的标题，让它们不那么突兀 */
-.page__content h1, 
-.page__title {
-  font-size: 1.5rem !important; /* 调整一级标题 */
+/* 2. 缩小列表条目的标题（比如 Publications 里的论文题目） */
+.archive__item-title {
+  font-size: 1.1rem !important; 
+  margin-top: 0.5em !important;
+  margin-bottom: 0.25em !important;
 }
 
-.page__content h2 {
-  font-size: 1.25rem !important; /* 调整二级标题 */
+/* 3. 缩小列表条目的说明文字（摘要、年份、期刊名等） */
+.archive__item-excerpt {
+  font-size: 0.85rem !important;
+  line-height: 1.5 !important;
 }
 
-.page__content h3 {
-  font-size: 1.1rem !important; /* 调整三级标题 */
+/* 4. 统一缩小所有页面的标题 */
+.page__content h1, .archive h1, .page__title, .archive__subtitle {
+  font-size: 1.5rem !important;
 }
 
-/* 3. 缩小表格内的文字 */
-.page__content table {
+.page__content h2, .archive h2 {
+  font-size: 1.25rem !important;
+}
+
+.page__content h3, .archive h3 {
+  font-size: 1.1rem !important;
+}
+
+/* 5. 缩小表格和代码块 */
+.page__content table, .archive table {
   font-size: 0.8rem !important;
 }
 
-/* 4. 缩小代码块的文字 */
-.page__content code, 
-.page__content pre {
+.page__content code, .archive code,
+.page__content pre, .archive pre {
   font-size: 0.75rem !important;
 }
