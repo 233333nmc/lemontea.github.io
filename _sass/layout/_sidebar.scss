@@ -211,24 +211,24 @@
 /* 加上 .sidebar 确保权重高于模板默认样式 */
 .sidebar .author__pronouns {
   margin: 0;
-  font-size: 2.0rem !important; /* 加入 !important 是最后的双重保险 */
+  font-size: 1.5rem !important; /* 加入 !important 是最后的双重保险 */
   color: #666;
 
   @include breakpoint($large) {
     margin-top: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: block; /* 确保它在桌面端独立成行 */
   }
 }
 
 .sidebar .author__bio {
   margin: 0;
-  font-size: 2.0rem !important; 
+  font-size: 1.5rem !important; 
   line-height: 1.4;
 
   @include breakpoint($large) {
     margin-top: 5px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
 }
 
