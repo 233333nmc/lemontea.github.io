@@ -337,3 +337,41 @@
     }
   }
 }
+/* ==========================================================================
+   CUSTOM CONTENT SCALING (Reduce size for right-side main content)
+   ========================================================================== */
+
+/* 1. 缩小所有段落、列表、引用和描述列表的文字 */
+.page__content p, 
+.page__content li, 
+.page__content dl, 
+.page__content blockquote,
+.page__content small {
+  font-size: 0.85rem !important; /* 原本大约是 1rem 以上，0.85 约为缩小三号的效果 */
+  line-height: 1.6 !important;   /* 稍微增加行间距，防止字小了看不清 */
+}
+
+/* 2. 缩小正文中的标题，让它们不那么突兀 */
+.page__content h1, 
+.page__title {
+  font-size: 1.5rem !important; /* 调整一级标题 */
+}
+
+.page__content h2 {
+  font-size: 1.25rem !important; /* 调整二级标题 */
+}
+
+.page__content h3 {
+  font-size: 1.1rem !important; /* 调整三级标题 */
+}
+
+/* 3. 缩小表格内的文字 */
+.page__content table {
+  font-size: 0.8rem !important;
+}
+
+/* 4. 缩小代码块的文字 */
+.page__content code, 
+.page__content pre {
+  font-size: 0.75rem !important;
+}
