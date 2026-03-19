@@ -3,6 +3,7 @@ layout: archive
 title: "Interests"
 permalink: /interests/
 author_profile: true
+css_class: interests-page
 ---
 
 ## Sports
